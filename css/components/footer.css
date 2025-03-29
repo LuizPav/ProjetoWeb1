@@ -1,0 +1,64 @@
+.footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 0.1fr 0.5fr;
+    grid-template-areas: 
+                "sobremim links-rapidos redes"
+                "linhaMaior linhaMaior linhaMaior"
+                "copy copy copy";
+    margin-top: 3rem;
+    background-color: var(--secundaria);
+    padding: 3rem 2rem;
+    justify-items: center;
+    align-items: center;
+}
+
+footer h3{
+    color: #FFF;
+}
+
+footer a, .sobremim p {
+    text-decoration: none;
+    color: var(--texto-cinza);
+}
+
+
+.linha{
+    color: var(--cor-primaria);
+    width: 60px;
+}
+#linhaMaior{
+    width: 1200px;
+    grid-area: linhaMaior;
+}
+
+.sobremim{
+    grid-area: sobremim;
+}
+
+.links-rapidos{
+    grid-area: links-rapidos;
+    display: flex;
+    flex-direction: column;
+}
+
+.redes a{
+    background-color: var(--texto-cinza);
+    border-radius: 50px;
+}
+
+.icones{
+    font-size: 1rem;
+    color: #FFF;
+}
+
+.redes{
+    grid-area: redes;
+}
+
+.copy{
+    display: flex;
+    place-content: center;
+    grid-area: copy;
+    color: var(--texto-cinza)
+}

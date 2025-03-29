@@ -3,4 +3,23 @@
     margin-bottom: 0;
     padding: 1rem 2rem;
     grid-area: 'header';
+    display: flex;
+    justify-content: space-between;
+    box-shadow:  5px 5px 10px rgba(80, 80, 80, 0.2);
+}
+
+.right{
+    display: flex;
+    flex-grow: 0.1;
+    justify-content: space-between;
+}
+
+header a{
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--primaria)
+}
+
+header a span{
+    color: var(--cor-primaria-escura);
 }
