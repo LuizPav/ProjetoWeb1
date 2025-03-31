@@ -1,0 +1,15 @@
+.Botao{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--cor-primaria);
+    width: 10rem;
+    height: 3rem;
+    border-radius: 5px;
+}
+
+.Botao a{
+    text-decoration: none;
+    color: #FFF;
+    font-size: 0.875rem;
+}

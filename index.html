@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meu Portfólio | Página Inicial</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/components/header.css">
     <link rel="stylesheet" href="css/components/footer.css">
@@ -11,61 +12,74 @@
     <link rel="stylesheet" href="css/pages/home.css">
 </head>
 <body>
-    <!-- Header -->
-    <header class="header">
-        <a href="index.html" class="left">Meu<span>Portfólio</span></a>
-        <div class="right">
-            <a href="index.html">Início</a>
-            <a href="portfolio.html">Portfólio</a>
-            <a href="contato.html">Contato</a>
-        </div>
-    </header>
-
-    <!-- Hero Section -->
-    <h1>Olá, eu sou <span>Aluno TADS</span></h1>
-    <p>Desenvolvedor Front-end & Designer UI/UX</p>
-    <a href="portfolio.html">Ver Meu Portfólio</a>
-    <img src="assets/images/profile-green.png" alt="Aluno TADS">
-
-    <!-- Skills Section -->
-    <h2>Minhas Habilidades</h2>
-    <!-- ícone fa-code -->
-    <h3>Desenvolvimento Web</h3>
-    <p>HTML5, CSS3, Design Responsivo</p>
-    <!-- ícone fa-paint-brush -->
-    <h3>Design UI/UX</h3>
-    <p>Figma, Adobe XD, Prototipagem</p>
-    <!-- ícone fa-mobile-alt -->   
-    <h3>Mobile First</h3>
-    <p>Design adaptado para dispositivos móveis</p>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="sobremim">
-            <h3>Sobre Mim</h3>
-            <hr class="linha">
-            <p>Desenvolvedor Front-end apaixonado por criar experiências web incríveis.</p>
-        </div>
-        <div class="links-rapidos">
-            <h3>Links Rápidos</h3>
-            <hr class="linha">
-            <a href="index.html">Início</a>
-            <a href="portfolio.html">Portfólio</a>
-            <a href="contato.html">Contato</a>    
-        </div>
-        <div class="redes">
-            <h3>Redes Sociais</h3>
-            <hr class="linha">
-            <div class="area-icones">
-                <div class="bola"><a href="#"><i class="icones fa-brands fa-github"></i></a></div>
-                <div class="bola"><a href="#"><i class="icones fa-brands fa-linkedin"></i></a></div>
-                <div class="bola"><a href="#"><i class="icones fa-brands fa-twitter"></i></a></div>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <a href="index.html" class="left">Meu<span>Portfólio</span></a>
+            <div class="right">
+                <a href="index.html" id="inicio">Início</a>
+                <a href="portfolio.html" id="portfolio">Portfólio</a>
+                <a href="contato.html" id="contato">Contato</a>
+            </div>
+        </header>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="content">
+                <h1>Olá, eu sou <span>Aluno TADS</span></h1>
+                <p>Desenvolvedor Front-end & Designer UI/UX</p>
+                <div class="Botao">
+                    <a href="portfolio.html">Ver Meu Portfólio</a>
+                </div>
+            </div>
+            <img src="assets/images/profile-green.png" alt="Aluno TADS" id="profile">
+        </section>
+        <!-- Skills Section -->
+        <div class="skills">
+            <h2 id="mySkills">Minhas Habilidades</h2>
+            <div class="devWeb">
+                <i class="fa-solid fa-code"></i><!-- ícone fa-code -->
+                <h3>Desenvolvimento Web</h3>
+                <p>HTML5, CSS3, Design Responsivo</p>
+            </div>
+            <div class="UIUX">
+                <i class="fa-solid fa-paint-brush"></i><!-- ícone fa-paint-brush -->
+                <h3>Design UI/UX</h3>
+                <p>Figma, Adobe XD, Prototipagem</p>
+            </div>
+            <div class="mobile">
+                <i class="fa-solid fa-mobile-alt"></i><!-- ícone fa-mobile-alt -->
+                <h3>Mobile First</h3>
+                <p>Design adaptado para dispositivos móveis</p>
             </div>
         </div>
-        <hr id="linhaMaior">
-        <div class="copy">
-            <p>&copy; 2025 Meu Portfólio. Todos os direitos reservados.</p>
-        </div>
-    </footer>
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="sobremim">
+                <h3>Sobre Mim</h3>
+                <hr class="linha">
+                <p>Desenvolvedor Front-end apaixonado por criar experiências web incríveis.</p>
+            </div>
+            <div class="links-rapidos">
+                <h3>Links Rápidos</h3>
+                <hr class="linha">
+                <a href="index.html">Início</a>
+                <a href="portfolio.html">Portfólio</a>
+                <a href="contato.html">Contato</a>
+            </div>
+            <div class="redes">
+                <h3>Redes Sociais</h3>
+                <hr class="linha">
+                <div class="area-icones">
+                    <div class="bola"><a href="#"><i class="icones fa-brands fa-github"></i></a></div>
+                    <div class="bola"><a href="#"><i class="icones fa-brands fa-linkedin"></i></a></div>
+                    <div class="bola"><a href="#"><i class="icones fa-brands fa-twitter"></i></a></div>
+                </div>
+            </div>
+            <hr id="linhaMaior">
+            <div class="copy">
+                <p>&copy; 2025 Meu Portfólio. Todos os direitos reservados.</p>
+            </div>
+        </footer>
+    </div>
 </body>
 </html>

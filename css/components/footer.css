@@ -31,13 +31,14 @@ footer a, .sobremim p {
 
 .linha{
     border: 2px solid var(--cor-primaria);
-    width: 60px;
+    width: 45px;
     margin: 0.5rem 0 1rem 0;
 }
 
 #linhaMaior{
     width: 1200px;
     grid-area: linhaMaior;
+    margin-top: 1rem;
 }
 
 .sobremim{

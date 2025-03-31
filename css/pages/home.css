@@ -1,0 +1,67 @@
+.container{
+    width: 1200px;
+    margin: 0 auto;   
+}
+
+.hero{
+    background-image:linear-gradient(rgba(255,255,255,0.6), rgba(255,255,255,0.6)),
+                        url(/assets/images/hero-bg.jpg);
+    background-size: cover;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+            "content profile"
+    ;
+    padding: 2rem;
+    padding-bottom: 3rem;
+}
+
+h1 span{
+    color: var(--cor-primaria);
+}
+
+.content{
+    grid-area: content;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    gap: 1rem;
+    margin-left: 2rem;
+}
+
+#profile{
+    grid-area: profile;
+    border: 5px solid #FFF;
+    border-radius: 5px;
+}
+
+.skills{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+            grid-template-areas:
+                "mySkills mySkills mySkills"
+                "devWeb UIUX Mobile"
+            ;
+}
+
+#mySkills{
+    display: flex;
+    grid-area: mySkills;
+    justify-content: center;
+    align-items: center;
+    color: var(--cor-secundaria)
+}
+
+.devWeb{
+    grid-area: devWeb;
+}
+
+.UIUX{
+    grid-area: UIUX;
+}
+
+.mobile{
+    grid-area: Mobile;
+}

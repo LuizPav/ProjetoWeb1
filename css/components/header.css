@@ -7,7 +7,6 @@
     justify-content: space-between;
     box-shadow:  5px 5px 10px rgba(80, 80, 80, 0.2);
     background-color: var(--fundo-branco);
-    margin-bottom: 2rem;
 }
 
 .right{
@@ -24,4 +23,9 @@ header a{
 
 header a span{
     color: var(--cor-primaria);
+}
+
+header .right a:focus{
+    color: var(--cor-primaria);
+    text-decoration: solid underline var(--cor-primaria) 3px;
 }

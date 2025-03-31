@@ -24,6 +24,7 @@ body{
     row-gap: 0;
     background-color: var(--fundo-claro);
     padding-top: 0rem;
+    margin-top: 2rem;
 }
 
 .form{
