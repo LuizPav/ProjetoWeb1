@@ -25,7 +25,20 @@ header a span{
     color: var(--cor-primaria);
 }
 
-header .right a:focus{
+header .right .active{
     color: var(--cor-primaria);
-    text-decoration: solid underline var(--cor-primaria) 3px;
+    padding-bottom: 0.3rem;
+    border-bottom: 3px solid var(--cor-primaria);
+    transition:  linear 2s;
+}
+
+header .right::after{
+    color: var(--cor-primaria);
+    padding-bottom: 0.3rem;
+    border-bottom: 3px solid var(--cor-primaria);
+}
+
+
+header .right a:hover{
+    color: var(--cor-primaria);
 }
