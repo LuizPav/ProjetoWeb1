@@ -2,10 +2,12 @@
     margin-top: 0;
     margin-bottom: 0;
     padding: 1rem 2rem;
-    grid-area: 'header';
+    grid-area: header;
     display: flex;
     justify-content: space-between;
     box-shadow:  5px 5px 10px rgba(80, 80, 80, 0.2);
+    background-color: var(--fundo-branco);
+    margin-bottom: 2rem;
 }
 
 .right{
@@ -17,9 +19,9 @@
 header a{
     text-decoration: none;
     font-weight: bold;
-    color: var(--primaria)
+    color: var(--cor-secundaria)
 }
 
 header a span{
-    color: var(--cor-primaria-escura);
+    color: var(--cor-primaria);
 }

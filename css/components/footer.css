@@ -1,20 +1,26 @@
 .footer{
     display: grid;
+    grid-area: footer;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 0.1fr 0.5fr;
     grid-template-areas: 
                 "sobremim links-rapidos redes"
                 "linhaMaior linhaMaior linhaMaior"
                 "copy copy copy";
-    margin-top: 3rem;
-    background-color: var(--secundaria);
+    background-color: var(--cor-secundaria);
     padding: 3rem 2rem;
-    justify-items: center;
-    align-items: center;
+    justify-items: start;
+    align-items: start;
+    margin-top: 2rem;
+}
+
+footer > div{
+    flex: 1;
 }
 
 footer h3{
     color: #FFF;
+    margin: 0;
 }
 
 footer a, .sobremim p {
@@ -24,9 +30,11 @@ footer a, .sobremim p {
 
 
 .linha{
-    color: var(--cor-primaria);
+    border: 2px solid var(--cor-primaria);
     width: 60px;
+    margin: 0.5rem 0 1rem 0;
 }
+
 #linhaMaior{
     width: 1200px;
     grid-area: linhaMaior;
@@ -42,11 +50,6 @@ footer a, .sobremim p {
     flex-direction: column;
 }
 
-.redes a{
-    background-color: var(--texto-cinza);
-    border-radius: 50px;
-}
-
 .icones{
     font-size: 1rem;
     color: #FFF;
@@ -56,9 +59,23 @@ footer a, .sobremim p {
     grid-area: redes;
 }
 
+.area-icones{
+    display: flex;
+    gap: var(--gap-padrao);
+}
+
+.area-icones .bola{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2rem;
+    height: 2rem;
+    background-color: var(--texto-cinza);
+    border-radius: 50px;
+}
 .copy{
     display: flex;
-    place-content: center;
+    place-self: center;
     grid-area: copy;
-    color: var(--texto-cinza)
+    color: var(--texto-cinza);
 }

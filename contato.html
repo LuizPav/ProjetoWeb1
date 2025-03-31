@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Portfólio | Contato</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">    
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/components/header.css">
@@ -11,6 +10,7 @@
     <link rel="stylesheet" href="css/components/buttons.css">
     <link rel="stylesheet" href="css/components/form.css">
     <link rel="stylesheet" href="css/pages/contact.css">
+    <title>Meu Portfólio | Contato</title>
 </head>
 <body>
     <div class="container">
@@ -29,24 +29,23 @@
             
             <form action="#" method="POST" class="form">
                 <div class="nome">
-                    <p>Nome Completo</p>
+                    <label>Nome Completo</label>
                     <input type="text" name="nome" id="nome" required>
                 </div>
                 <div class="email">
-                    <p>e-mail</p>
+                    <label>e-mail</label>
                     <input type="email" name="email" id="email" required>
                 </div>
                 <div class="assunto">
-                    <p>Assunto</p>
+                    <label>Assunto</label>
                     <select name="assunto" id="select">
                         <option selected disabled>Selecione um assunto</option>
-                        <option value="Duvida">Dúvida</option>
-                        <option value="Passei"></option>
-                        <option value=""></option>
+                        <option value="duvida">Dúvida</option>
+                        <option value="sugestao">Sugestão</option>
                     </select>
                 </div>
                 <div class="mensagem">
-                    <p>Mensagem</p>
+                    <label>Mensagem</label>
                     <textarea name="mensagem" rows="8" cols="50" id="mensagem"></textarea>
                 </div>
                 <input type="submit" value="Enviar Mensagem" id="submitButton">
@@ -89,9 +88,11 @@
             <div class="redes">
                 <h3>Redes Sociais</h3>
                 <hr class="linha">
-                <a href="#"><i class="icones fa-brands fa-github"></i></a>
-                <a href="#"><i class="icones fa-brands fa-linkedin"></i></a>
-                <a href="#"><i class="icones fa-brands fa-twitter"></i></a>
+                <div class="area-icones">
+                    <div class="bola"><a href="#"><i class="icones fa-brands fa-github"></i></a></div>
+                    <div class="bola"><a href="#"><i class="icones fa-brands fa-linkedin"></i></a></div>
+                    <div class="bola"><a href="#"><i class="icones fa-brands fa-twitter"></i></a></div>
+                </div>
             </div>
             <hr id="linhaMaior">
             <div class="copy">
