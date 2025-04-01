@@ -21,6 +21,12 @@
     width: 5rem;
     padding: 0.5rem;
     margin: 0.5rem;
+    transition: background-color 0.5s ease;
+}
+
+.projectbutton:hover{
+    background-color: var(--cor-primaria);
+    color: #FFF;
 }
 .selected{
     background-color: var(--cor-primaria);
