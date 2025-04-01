@@ -14,6 +14,12 @@
     font-size: 0.875rem;
 }
 
+.Botao:hover{
+    transform: translate(0, -0.2rem);
+    transition: transform 0.5s ease-in-out;
+    background-color: var(--cor-secundaria);
+}
+
 .projectbutton{
     background-color: #FFF0;
     border: 1px var(--cor-primaria) solid;
@@ -28,6 +34,7 @@
     background-color: var(--cor-primaria);
     color: #FFF;
 }
+
 .selected{
     background-color: var(--cor-primaria);
     color: #FFF;

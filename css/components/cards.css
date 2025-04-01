@@ -16,19 +16,11 @@
 
 .cards img{
     margin: 0;
-    max-width: 20rem;
-    max-height: 11rem;
+    max-width: 30rem;
+    max-height: 15rem;
     display: block;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
-}
-
-.card img::after{
-    width: 900px;
-    background-color: rgba(0, 0, 0, 0.6);
-    border: 10px solid black;
-    opacity: 0;
-    transition: opacity 0.2s ease-in-out;
 }
 
 .cards p{
@@ -62,10 +54,11 @@
     background-color: var(--fundo-branco);
     border-radius: 5px;
     gap: 0.5rem;
+    width: 30rem;
 }
 
 .overlay{
-    transform: translate(20%, -6rem);
+    transform: translate(32%, -8rem);
     opacity: 0;
     transition: opacity 0.3s ease-in-out;
 }
@@ -82,10 +75,10 @@
 .card a:hover{
     background-color: var(--cor-primaria);
     color: #FFF;
+    transition: background-color 0.3s ease;
 }
 
-.card:hover .overlay,
-.card:hover .card img::After{
+.card:hover .overlay{
     opacity: 1;    
 }
 

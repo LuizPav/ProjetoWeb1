@@ -1,4 +1,6 @@
 .header{
+    position: sticky;
+    top: 0;
     margin-top: 0;
     margin-bottom: 0;
     padding: 1rem 2rem;
@@ -6,7 +8,8 @@
     display: flex;
     box-shadow:  5px 5px 10px rgba(80, 80, 80, 0.2);
     background-color: var(--fundo-branco);
-    width: auto;
+    width: 100vw;
+    z-index: 99;
 }
 
 .headerContent{
@@ -36,15 +39,7 @@ header .right .active{
     color: var(--cor-primaria);
     padding-bottom: 0.3rem;
     border-bottom: 3px solid var(--cor-primaria);
-    transition:  linear 2s;
 }
-
-header .right::after{
-    color: var(--cor-primaria);
-    padding-bottom: 0.3rem;
-    border-bottom: 3px solid var(--cor-primaria);
-}
-
 
 header .right a:hover{
     color: var(--cor-primaria);

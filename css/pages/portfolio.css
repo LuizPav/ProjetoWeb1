@@ -10,6 +10,7 @@
                 "cards cards"
                 "footer footer"
     ;
+    background-color: var(--fundo-claro);
 }
 
 .projectContent{

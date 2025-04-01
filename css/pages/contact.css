@@ -76,6 +76,12 @@ body{
     border: none;
 }
 
+#submitButton:hover{
+    transform: translate(0, -0.2rem);
+    background-color: var(--cor-secundaria);
+    transition: transform 0.5s ease;
+}
+
 .conteudo{
     grid-area: conteudo;
 }
