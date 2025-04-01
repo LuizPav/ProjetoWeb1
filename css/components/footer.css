@@ -1,17 +1,25 @@
 .footer{
     display: grid;
     grid-area: footer;
+    align-content: center;
+    background-color: var(--cor-secundaria);
+    padding: 3rem 2rem;
+    justify-items: start;
+    align-items: start;
+    margin-top: 2rem;
+    width: auto;
+}
+
+.footerContent{
+    width: 1200px;
+    margin: auto;
+    display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 0.1fr 0.5fr;
     grid-template-areas: 
                 "sobremim links-rapidos redes"
                 "linhaMaior linhaMaior linhaMaior"
                 "copy copy copy";
-    background-color: var(--cor-secundaria);
-    padding: 3rem 2rem;
-    justify-items: start;
-    align-items: start;
-    margin-top: 2rem;
 }
 
 footer > div{
@@ -36,6 +44,7 @@ footer a, .sobremim p {
 }
 
 #linhaMaior{
+    border: 1px solid var(--texto-cinza);
     width: 1200px;
     grid-area: linhaMaior;
     margin-top: 1rem;

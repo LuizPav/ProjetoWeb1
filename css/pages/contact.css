@@ -1,25 +1,31 @@
 body{
     background-color: var(--fundo-claro);
 }
+
 .container{
-    width: 1200px;
-    margin: 0 auto;
+    width: auto;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto 1fr auto;
     grid-template-areas: 
         'header'
         'content'
-        'footer';    
+        'footer';
 }
 
-.content{
+.contactContent{
+    width: 1200px;
+    margin: auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto 1fr;
     grid-template-areas: 
             "page-title page-title"
-            "form conteudo";
+            "form conteudo"
+}
+
+.content{
+    display: grid;
     grid-area: content;
     row-gap: 0;
     background-color: var(--fundo-claro);

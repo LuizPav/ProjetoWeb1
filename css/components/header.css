@@ -4,9 +4,16 @@
     padding: 1rem 2rem;
     grid-area: header;
     display: flex;
-    justify-content: space-between;
     box-shadow:  5px 5px 10px rgba(80, 80, 80, 0.2);
     background-color: var(--fundo-branco);
+    width: auto;
+}
+
+.headerContent{
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    width: 1200px;
 }
 
 .right{

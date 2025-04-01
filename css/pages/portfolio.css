@@ -1,0 +1,30 @@
+.container{
+    width: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto auto auto;
+    grid-template-areas: 
+                "header header"
+                "projeto projeto"
+                "botoes botoes"
+                "cards cards"
+                "footer footer"
+    ;
+}
+
+.projectContent{
+    grid-area: projeto;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    margin-bottom: 2rem;
+}
+
+.projectContent h1{
+    color: var(--cor-secundaria);
+    text-align: center;
+}
+
+.buttons{
+    grid-area: botoes;   
+}

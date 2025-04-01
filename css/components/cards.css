@@ -1,0 +1,90 @@
+.cards{
+    grid-area: cards;
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+        "card1 card2"
+        "card3 card4"
+        "card5 card6"
+        "card7 card8"
+    ;
+    margin: auto;
+    gap: var(--gap-padrao);
+}
+
+.cards img{
+    margin: 0;
+    max-width: 20rem;
+    max-height: 11rem;
+    display: block;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.cards p{
+    color: var(--texto-cinza);
+    font-size: 0.875rem;
+}
+
+.bg-cinza{
+    margin-top: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2rem;
+    height: 1rem;
+    background-color: #8884;
+    border-radius: 5px;
+}
+
+.cards span{
+    color: var(--cor-primaria);
+    font-size: 0.5rem;
+    font-weight: bold;
+}
+
+.card{
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 5px 5px 15px rgba(80,80,80,0.5);
+    background-color: var(--fundo-branco);
+    border-radius: 5px;
+    gap: 0.5rem;
+}
+
+.imgInfo{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 0.5;
+    padding: 0.2rem 2rem;
+    justify-content: center;
+}
+
+#card1{
+    grid-area: card1;
+}
+#card2{
+    grid-area: card2;
+}
+#card3{
+    grid-area: card3;
+}
+#card4{
+    grid-area: card4;
+}
+#card5{
+    grid-area: card5;
+}
+#card6{
+    grid-area: card6;
+}
+#card7{
+    grid-area: card7;
+}
+#card8{
+    grid-area: card8;
+}
