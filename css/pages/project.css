@@ -116,6 +116,11 @@
     max-width: 1200px;
 }
 
+.galeryImages img:hover{
+    transform: scale(1.2);
+    transition: transform 0.5s ease;
+}
+
 #image1{
     grid-area: image1;
     width: 100%;
