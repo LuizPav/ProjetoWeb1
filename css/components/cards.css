@@ -16,11 +16,32 @@
 
 .cards img{
     margin: 0;
+    width: 100%;
+    height: 100%;
     max-width: 30rem;
     max-height: 15rem;
     display: block;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
+}
+
+.cards img::after{
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    max-width: 30rem;
+    max-height: 15rem;
+    display: block;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    filter: brightness(0.2);
+    transition:  all 0.5s ease;
+}
+
+.card img:hover::after,
+.card:hover .card img::after,
+.overlay:hover .card img::after{
+    filter: brightness(0.2);
 }
 
 .cards p{
@@ -37,6 +58,7 @@
     height: 1rem;
     background-color: #8884;
     border-radius: 5px;
+    margin-bottom: 0.5rem;
 }
 
 .cards span{
@@ -54,13 +76,15 @@
     background-color: var(--fundo-branco);
     border-radius: 5px;
     gap: 0.5rem;
-    width: 30rem;
+    width: 100%;
+    max-width: 30rem;
 }
 
 .overlay{
     transform: translate(32%, -8rem);
     opacity: 0;
     transition: opacity 0.3s ease-in-out;
+    z-index: 2;
 }
 
 .overlay a{
@@ -113,4 +137,43 @@
 }
 #card8{
     grid-area: card8;
+}
+
+@media (max-width: 768px) {
+    .cards {
+        grid-template-columns: 1fr; 
+        grid-template-areas: 
+                    "card1"
+                    "card2"
+                    "card3"
+                    "card4"
+                    "card5"
+                    "card6"
+                    "card7"
+                    "card8"
+        ;
+        padding: 0 1rem;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .overlay {
+        transform: translate(0, -4rem);
+    }
+}
+
+@media (max-width: 576px) {
+    .cards {
+        gap: 1rem;
+    }
+
+    .card {
+        font-size: 0.9rem;
+    }
+
+    .overlay {
+        transform: translate(0, -3rem);
+    }
 }

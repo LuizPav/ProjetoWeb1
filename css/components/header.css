@@ -8,7 +8,6 @@
     display: flex;
     box-shadow:  5px 5px 10px rgba(80, 80, 80, 0.2);
     background-color: var(--fundo-branco);
-    width: 100vw;
     z-index: 99;
 }
 
@@ -16,7 +15,8 @@
     display: flex;
     justify-content: space-between;
     margin: auto;
-    width: 1200px;
+    width: 100%;
+    max-width: 1200px;
 }
 
 .right{
@@ -44,3 +44,122 @@ header .right .active{
 header .right a:hover{
     color: var(--cor-primaria);
 }
+
+.menu-toggle {
+    display: none;
+}
+
+.hamburger {
+    display: none;
+    font-size: 2rem;
+    color: var(--cor-secundaria);
+    cursor: pointer;
+}
+
+.right {
+    display: flex;
+    gap: 2rem;
+}
+
+@media (max-width: 576px) {
+    .headerContent {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .right {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        gap: 1rem;
+        margin-top: 1rem;
+    }
+
+    .menu-toggle:checked + .hamburger + .right {
+        transition: all 0.5s ease;
+        display: flex;
+    }
+
+    .hamburger {
+        display: block;
+        font-size: 2rem;
+        color: var(--cor-secundaria);
+    }
+
+    .left {
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: var(--cor-secundaria);
+        text-decoration: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .headerContent {
+        padding: 0 1rem;
+    }
+
+    .right {
+        padding: 1rem 1.5rem;
+        font-size: 0.95rem;
+    }
+
+    .hamburger {
+        font-size: 2rem;
+    }
+
+    .left {
+        font-size: 1.5rem;
+    }
+
+    .menu-toggle:checked + .hamburger + .right {
+        transition: all 0.5s ease;
+        display: flex;
+    }
+}
+
+
+@media (max-width: 576px) {
+    .headerContent {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        position: relative;
+    }
+
+    .hamburger {
+        display: block;
+        font-size: 2rem;
+        color: var(--cor-secundaria);
+        cursor: pointer;
+        z-index: 2;
+    }
+
+    .right {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: -10%;
+        width: 100vw;
+        background-color: var(--fundo-branco);
+        padding: 1rem 2rem;
+        gap: 1rem;
+        z-index: 1;
+        box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+    }
+
+    header .right .active{
+        border: none;
+    }
+
+    .menu-toggle:checked + .hamburger + .right {
+        transition: all 0.5s ease;
+        display: flex;
+    }
+}
+
+

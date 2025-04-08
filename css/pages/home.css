@@ -72,3 +72,77 @@ h1 span{
 .mobile{
     grid-area: Mobile;
 }
+
+@media (max-width: 992px) {
+    .heroContent {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas:
+            "profile"
+            "content";
+        gap: 2rem;
+        width: 100%;
+        padding: 0 1rem;
+    }
+
+    .content {
+        text-align: center;
+        margin-left: 0;
+        align-items: center;
+    }
+
+    #profile {
+        justify-self: center;
+        max-width: 300px;
+        width: 100%;
+    }
+
+    .skillsContent {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "mySkills mySkills"
+            "devWeb UIUX"
+            "Mobile Mobile";
+        gap: 2rem;
+        width: 100%;
+        padding: 0 1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero {
+        padding: 2rem 1rem;
+    }
+
+    .heroContent,
+    .skillsContent {
+        grid-template-columns: 1fr;
+        width: 100%;
+        padding: 0 1rem;
+    }
+
+    .heroContent {
+        grid-template-areas:
+            "profile"
+            "content";
+    }
+
+    .skillsContent {
+        grid-template-areas:
+            "mySkills"
+            "devWeb"
+            "UIUX"
+            "Mobile";
+    }
+
+    .content {
+        text-align: center;
+        align-items: center;
+        margin-left: 0;
+    }
+
+    #profile {
+        max-width: 250px;
+        width: 100%;
+    }
+}

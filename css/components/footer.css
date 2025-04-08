@@ -11,7 +11,7 @@
 }
 
 .footerContent{
-    width: 1200px;
+    max-width: 1200px;
     margin: auto;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -45,7 +45,7 @@ footer a, .sobremim p {
 
 #linhaMaior{
     border: 1px solid var(--texto-cinza);
-    width: 1200px;
+    max-width: 1200px;
     grid-area: linhaMaior;
     margin-top: 1rem;
 }
@@ -105,4 +105,42 @@ footer a, .sobremim p {
     place-self: center;
     grid-area: copy;
     color: var(--texto-cinza);
+}
+
+@media (max-width: 768px) {
+    .footerContent {
+        width: 100%;
+        padding: 0 1rem;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto auto auto;
+        grid-template-areas:
+            "sobremim sobremim"
+            "links-rapidos redes"
+            "linhaMaior linhaMaior"
+            "copy copy";
+        row-gap: 2rem;
+    }
+
+    #linhaMaior {
+        width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    .footerContent {
+        width: 100%;
+        padding: 0 1rem;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "sobremim"
+            "links-rapidos"
+            "redes"
+            "linhaMaior"
+            "copy";
+        row-gap: 2rem;
+    }
+
+    #linhaMaior {
+        width: 100%;
+    }
 }

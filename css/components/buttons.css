@@ -39,3 +39,31 @@
     background-color: var(--cor-primaria);
     color: #FFF;
 }
+
+.BotaoSFundo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFF0;
+    border: 1px solid var(--cor-primaria);
+    width: 13rem;
+    height: 3rem;
+    border-radius: 5px;
+}
+
+.BotaoSFundo{
+    color: var(--cor-primaria);
+    text-decoration: none;
+    font-size: 0.875rem
+}
+
+.buttons{
+    display: flex;
+    gap: var(--gap-padrao);
+}
+
+.BotaoSFundo:hover{
+    background-color: var(--cor-primaria);
+    color: #FFF;
+    transition: background-color 0.5s ease;
+}
